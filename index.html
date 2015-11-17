@@ -2,13 +2,13 @@
 <html>
 	<head>
 		<title>Google Spreadsheet JSON Example</title>
-		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400italic,700,700italic' rel='stylesheet' type='text/css'>	<script src="http://code.jquery.com/jquery-latest.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.3.5/tabletop.min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
 		<script>
 			$(document).ready(function(){
 					//configure spreadsheet
-				  var public_spreadsheet_url = '1dxr7GTS7-22Rc9a39PpKpNDAsFg8Ina22-hwZ1dR9sc';
+				  var public_spreadsheet_url = '1POvR2rqYo188omPTId9KcgmtQJyc_Wo4C1avNmBqPIY';
 					//function to get data from the spreadsheet
 				  var getData = function () {
 				    Tabletop.init({
@@ -21,10 +21,18 @@
 					var processData = function(data){
 						console.log(data);
 						for(var i=0; i<data.length; i++) {
-							// $("body").append(data[i].foods + " ");
-							// $("<h2>").addClass("fancyBorder").html(data[i].foods).appendTo("body");
-							if(data[i].opinion === "yes") {
-								var price = "yes";
+							 // $("body").append(data[i].space + "ok");
+
+
+
+
+
+							 $("<h2>").addClass("fancyBorder").html(data[i].space).appendTo("body");
+
+
+
+						if(data[i].opinion === "yes") {
+					var price = "yes";
 							} else if(data[i].opinion === "no") {
 								var price = "no";
 							}
@@ -34,10 +42,13 @@
 					};
 					//function that runs when the page is ready
 				  getData();
+
+
+
 			});
 		</script>
 		<style>
-			.fancyBorder {
+			/* .fancyBorder {
 				border:1px solid black;
 			}
 			.yes {
@@ -64,27 +75,59 @@
 	@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 	@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
 			}
-
+*/
 			h2 {
 				padding: 10px;
 				color: black;
-				font-size: 85px;
+				font-size: 40px;
 				margin: 10px;
-				letter-spacing: 1.1em;
+				letter-spacing: 0.5em;
 				text-shadow: 2px 2px black;
-				font-family: 'Nunito', sans-serif;
-				text-decoration: line-through;
+				font-family:  sans-serif;
+				text-transform: uppercase;
+				margin-left: auto;
+				margin-left: auto;
+					text-align: center;
+					font-family: 'Anonymous Pro', sans-serif;
+
 			 }
+			 h1 {
+		 		padding: 10px;
+		 		color: black;
+		 		font-size: 70px;
+		 		margin-left: auto;
+				margin-left: auto;
+					text-align: center;
+		 		letter-spacing: 0.5em;
+		 		text-shadow: 2px 2px black;
+				text-transform: uppercase;
+				font-family: 'Helvetica', sans-serif;
+				font-weight: bold;
 
 
 
-			body {
-		background-image: url("https://media.giphy.com/media/jsPTDWMlhjLe8/giphy.gif");
-		background-size: 3000px;
-			}
+		 	 }
+
+body {
+	background-image: url(http://pngimg.com/upload/smoke_PNG977.png);
+	background-size: 6000px 2px;
+	border: 50px solid black;
+	padding: 100px;
+}
+
+
 		</style>
 
 	</head>
 	<body>
+		<page>
+		<h1> What is Earth Like? </h1>
+		<div>
+		</div>
+
+
+
+
+<page/>
 	</body>
 </html>
