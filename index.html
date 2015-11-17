@@ -41,39 +41,45 @@
 				border:1px solid black;
 			}
 			.yes {
-				background-color:#138630;
+				background-image: url(http://gauss.unh.edu/~jel/images/anthropoid_hands.jpg);
+				background-size: 150px;
 				opacity: 0.8;
-				border-top: 10px solid #634536;
+				border-top: 10px solid #634536;	-webkit-animation:spin 58s linear infinite;
+	    -moz-animation:spin 58s linear infinite;
+	    animation:spin 58s linear infinite;
+	}
+	@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+	@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+	@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
 			}
 			.no {
 				background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/54/Primates-drawing.jpg);
 				background-size: 150px;
 				opacity: 0.8;
-				border-top: 10px solid #138630;
+				border-top: 10px solid #138630;	-webkit-animation:spin 60s linear infinite;
+	    -moz-animation:spin 60s linear infinite;
+	    animation:spin 60s linear infinite;
+	}
+	@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+	@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+	@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
 			}
 
 			h2 {
 				padding: 10px;
-				color: beige;
-				font-size: 60px;
+				color: black;
+				font-size: 85px;
 				margin: 10px;
 				letter-spacing: 1.1em;
 				text-shadow: 2px 2px black;
 				font-family: 'Nunito', sans-serif;
-				-webkit-animation:spin 60s linear infinite;
-    -moz-animation:spin 60s linear infinite;
-    animation:spin 60s linear infinite;
-}
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+				text-decoration: line-through;
+			 }
 
 			}
 
 			body {
-				background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/54/Primates-drawing.jpg);
-				background-repeat: no-repeat;
-				background-size: 1200px;
+			background-color: blue;
 			}
 		</style>
 
