@@ -23,9 +23,9 @@
 							// $("body").append(data[i].foods + " ");
 							// $("<h2>").addClass("fancyBorder").html(data[i].foods).appendTo("body");
 							if(data[i].opinion === "yes") {
-								var price = "cheap";
+								var price = "yes";
 							} else if(data[i].opinion === "no") {
-								var price = "average";
+								var price = "no";
 							}
 							$("<h2>").addClass("fancyBorder").addClass(price).html(data[i].primates).appendTo("body");
 							// $("body").append("<h2 class='fancyBorder "+price+"'>"+data[i].foods+"</h2>");
@@ -39,22 +39,23 @@
 			.fancyBorder {
 				border:1px solid black;
 			}
-			.cheap {
-				background-color:green;
+			.yes {
+				background-color:#138630;
+				opacity: 0.8;
 			}
-			.average {
-				background-color:yellow;
-			}
-			.expensive {
-				background-color:red;
+			.no {
+				background-color:#634536;
+				opacity: 0.8;
 			}
 
 			h2 {
 				padding: 10px;
 				color: beige;
-				font-size: 35px;
+				font-size: 60px;
 				margin: 10px;
-				
+				letter-spacing: 1.1em;
+				text-shadow: 2px 2px black;
+
 			}
 
 			html {
